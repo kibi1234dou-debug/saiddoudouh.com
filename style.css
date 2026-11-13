@@ -1,8 +1,24 @@
+.oi-regular {
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ranchers-regular {
+  font-family: "Ranchers", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
 body{
     background-color: #340077;
     color: #ff0008;
     margin: 0;
     padding: 0;
+    font-family: "Ranchers", sans-serif;
 }
 
 header{
@@ -12,7 +28,7 @@ header{
 ul{
     list-style-type: none;
     margin: 0;
-    padding: 60px 0 0 0;
+    padding: 220px 0 90px 0;
     display: flex;
     flex-direction: row;
     gap: 40px;
@@ -25,12 +41,23 @@ li{
     
 }
 
+p{
+    font-size: 30px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+h2{
+    font-size: 120px;
+    margin: 0;
+}
+
 li a{
     color: #ff0008;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 63px;
     
 }
 
@@ -42,17 +69,22 @@ section{
 .intro{
     background-color: none;
     margin: 0px;
-    height: 1080px;
+    height: 985px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    padding: 0 60px;
 }
 
 .intro h1{
     width: 100%;
-    font-size: 185px;
+    font-size: 160px;
     margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.titlecards{
+    padding: 0 40px;
 }
 
 #intro{
@@ -60,16 +92,55 @@ section{
     background-size: cover;
     background-position: center;
 }
+.photos{
+    margin: 0;
+    padding: 0;
+}
 
 .photos div{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0px;
-    margin-top: 20px;
 }
 
 .photos img{
     width: 100%;
     height: auto;
 
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+.clips{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 100px;
+    padding-bottom: 180px;
+    background-color: #ff0008;
+    margin: 0;
+}
+
+.clips h2{
+    color: #340077;
+    display: flex;
+    justify-content: center;
+}
+
+.clips div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+.clips iframe{
+    width: 560px;
+    height: 315px;
 }
